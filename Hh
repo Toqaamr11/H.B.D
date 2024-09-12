@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, My Love</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0e7db;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            color: #ff1493;
+            font-size: 50px;
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 24px;
+            margin: 20px 0;
+        }
+
+        .birthday-card {
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            display: inline-block;
+            max-width: 600px;
+            margin-top: 50px;
+        }
+
+        .birthday-card img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff1493;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #ff69b4;
+        }
+
+        /* Stars Effect */
+        .stars {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        .stars span {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: #ff1493;
+            top: -10px;
+            animation: animate 25s linear infinite;
+        }
+
+        @keyframes animate {
+            0% {
+                transform: translateY(0) rotate(0deg);
+            }
+            100% {
+                transform: translateY(1000px) rotate(720deg);
+            }
+        }
+
+        .stars span:nth-child(odd) {
+            animation-duration: 30s;
+        }
+
+        .stars span:nth-child(even) {
+            animation-duration: 20s;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="stars">
+        <!-- Add floating stars effect -->
+        <span style="left: 10%; animation-delay: 0s;"></span>
+        <span style="left: 50%; animation-delay: 2s;"></span>
+        <span style="left: 70%; animation-delay: 4s;"></span>
+        <span style="left: 90%; animation-delay: 6s;"></span>
+        <span style="left: 30%; animation-delay: 8s;"></span>
+    </div>
+
+    <div class="birthday-card">
+        <h1>Happy Birthday, My Love!</h1>
+        <p>To the most amazing person in my life, I love you more than words can ever express. You bring so much happiness and light into my world, and I am so grateful to have you.</p>
+        <p>Wishing you all the love, joy, and wonderful moments today and forever. Happy 17th birthday, my heart!</p>
+        <p style="font-style: italic; margin-top: 20px;">With all my love, your girlfriend Toqa.</p>
+        <img src="cake.jpg" alt="Birthday Cake Image">
+        <a href="#" class="btn">Click here for a surprise</a>
+    </div>
+</body>
+</html>
